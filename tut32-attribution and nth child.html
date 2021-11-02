@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo Selectors</title>
+</head>
+<style>
+    .container {
+        display: block;
+        width: 250px;
+        margin: auto;
+    }
+
+    input {
+        display: inline;
+    }
+
+    input[type='Name'] {
+        padding: 10px 10px;
+        border: 2px solid red;
+    }
+
+    input[type='password'] {
+        margin: 2px;
+        padding: 10px 10px;
+        border: 2px solid red;
+    }
+
+    a[type] {
+        font-size: large;
+        color: pink;
+    }
+
+    a[type='link2'] {
+        color: blue;
+    }
+
+    li:nth-child(3) {
+        color: cyan;
+    }
+
+    li:nth-child(3n+3) {
+        color: red;
+    }
+
+    li:nth-child(even) {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <a href="http://google.com" type="link">
+        <center>
+            go to google
+        </center>
+    </a>
+    <a href="http://facebook.com" type="link2">go to fb</a>
+    <form action="" class="container">
+        <input type="Name" placeholder="your name">
+        <input type="password" placeholder="your password" name="" id="">
+        <input type="submit" value="Submit">
+    </form>
+    <div class="container">
+        <ul>
+            <li class="class" id="item-1">Item1</li>
+            <li class="class" id="item-2">Item2</li>
+            <li class="class" id="item-3">Item3</li>
+            <li class="class" id="item-4">item-4</li>
+            <li class="class" id="item-5">Item5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

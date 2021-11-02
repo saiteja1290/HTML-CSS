@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listing to events</title>
+</head>
+<style>
+    #btn {
+        padding: 7px 15px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    
+</style>
+
+<body>
+    <h1>This is a Para</h1>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates rerum iusto in inventore
+        temporibus
+        cupiditate eaque enim unde laudantium soluta ipsa obcaecati amet blanditiis vel eligendi, voluptas sit
+        molestiae. Quam inventore maiores tempore ipsam impedit voluptatibus, praesentium quo molestias quia id qui
+        quidem eligendi voluptas aliquid fuga, aperiam voluptates expedita quasi, quis voluptatum vel. Ex eveniet
+        adipisci vero aliquam numquam laboriosam totam, excepturi aut corrupti illo fugit molestiae expedita
+        perspiciatis inventore blanditiis? Nostrum ipsam, culpa quo quis totam ullam quia nisi ducimus qui temporibus
+        fugit illum, voluptates iusto perspiciatis porro fugiat animi? Voluptatem labore officia numquam ipsum
+        necessitatibus quos voluptates assumenda non sapiente, voluptatum beatae nulla asperiores voluptate quibusdam
+        magni totam eveniet nobis fugiat explicabo amet? Exercitationem molestiae officiis voluptas odio distinctio esse
+        deserunt sed nemo earum. Labore maxime, soluta harum ex ipsa, quae voluptatibus voluptatum, odit fugit dolor
+        quia quisquam vel cum laborum! Amet odit vel dolor rerum tempora. Voluptatibus omnis doloremque blanditiis,
+        ullam delectus nam optio obcaecati in tempore aliquid quod minima qui molestiae explicabo, impedit aspernatur
+        nisi suscipit. Rem eius facere ab corrupti excepturi, recusandae in provident dolore dolorum quia molestias unde
+        ex iste quidem asperiores sed modi aspernatur! Eveniet non tempora corrupti aliquid vitae ab corporis.</p>
+    <button  onclick="toggleHide()" id="btn"> Hide / Show</button>
+</body>
+<script>
+        function toggleHide(){
+        // let btn = document.getElementById('btn');
+        let para = document.getElementById('para'); 
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+        para.style.display = 'block';
+        }
+    }
+</script>
+
+</html>

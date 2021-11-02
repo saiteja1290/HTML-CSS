@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem vh vw</title>
+</head>
+<style>
+    html{
+        font-size: 10px;
+    }
+    .container {
+        font-size: 10px;
+        text-align: center;
+        border: 2px solid red;
+        width: 100vw;
+        /* 100 vw means take 100% width */
+        height: 100vh;
+    }
+
+    #one {
+        font-size: 3em;
+        /* parent font being 10px , now specifying 10em means font size= 10 x 3 = 30px */
+    }
+    #two{
+        font-size: 3rem;
+        padding: 0px 3rem;
+    }
+</style>
+
+<body>
+    <header class="container">
+        <h2 id="one">This is my heading 1</h2>
+        <h2 id="two">This is my heading 2</h3>
+            <h2 id="three">This is my heading 3</h2>
+            <!-- mind that id shud not be number -->
+    </header>
+</body>
+
+</html>

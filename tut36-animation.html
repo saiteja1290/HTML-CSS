@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container {
+        background-color: green;
+        display: flex;
+        width: 200px;
+        height: 200px;
+        animation-name: teja1 ;
+        position: relative; /*This is important for animation */
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        /* animation-timing-function: ease-in-out; */
+        /* animation-fill-mode: alternate; */
+        /* animation-direction: reverse; */
+        /* animation-delay: 1s; */
+        /* ****animation: name duration timing-function delay iteration-count direction fill-mode;**** */
+    }
+    @keyframes  teja1 {
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        50%{
+            top: 50px;
+            left:50px
+        }
+        75%{
+            top: 50px;
+            left: 0px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
+    /* @keyframes teja1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 700px;
+            }
+        
+    } */
+    header{
+        background-color: greenyellow;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            This is a line
+        </div>
+    </header>
+</body>
+
+</html>
